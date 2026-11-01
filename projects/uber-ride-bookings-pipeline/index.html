@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Uber Ride Bookings Data Engineering Pipeline | Rohan Kumar Raj</title>
+<meta name="description" content="Case study: Uber Ride Bookings Data Engineering Pipeline. A Medallion pipeline that prepares ride-booking data so bookings, revenue, cancellations and vehicle performance can be analyzed with SQL.">
+<meta name="theme-color" content="#14171c">
+<meta property="og:title" content="Uber Ride Bookings Data Engineering Pipeline | Rohan Kumar Raj">
+<meta property="og:description" content="Case study: Uber Ride Bookings Data Engineering Pipeline. A Medallion pipeline that prepares ride-booking data so bookings, revenue, cancellations and vehicle performance can be analyzed with SQL.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><a class="logo" href="../../">Rohan Kumar Raj</a>
+<nav aria-label="Main"><a href="../../about/">About</a><a href="../../journey/">Journey</a><a href="../../projects/" aria-current="page">Projects</a><a href="../../contact/">Contact</a></nav></div></header>
+<main id="main">
+<div class="wrap cs">
+<div class="pagehead"><p class="eyebrow">Case study · Data pipeline</p>
+<h1>Uber Ride Bookings Data Engineering Pipeline</h1>
+<div class="prose"><p class="lead" style="margin-top:16px">Raw ride-booking data is messy. I built a Medallion pipeline that <strong>prepares it for SQL analysis</strong> of bookings, revenue, cancellations and vehicle performance.</p></div></div>
+<div class="stats"><div><b>3</b><span>Medallion layers: Bronze, Silver, Gold</span></div><div><b>4</b><span>Gold areas: bookings, revenue, cancellations, vehicles</span></div><div><b>Delta</b><span>Lake tables for each layer</span></div></div>
+<section><div class="facts f3">
+<div class="fact"><h3>Problem</h3><p>Ride-booking data arrives with missing values, duplicates and quality issues, which makes it hard to analyze bookings, revenue, cancellations and vehicle performance reliably.</p></div>
+<div class="fact"><h3>My role</h3><p>I designed and built the pipeline on Azure Databricks, cleaned the data with PySpark, stored each layer as Delta Lake tables, and wrote the SQL on the Gold tables.</p></div>
+<div class="fact"><h3>Result</h3><p>Clean Gold tables that SQL queries can use directly to produce business insights on bookings, revenue, cancellations and vehicle performance.</p></div>
+</div></section>
+<section><h2>Approach</h2><div class="prose"><p>Each layer has one job:</p></div><div class="layers"><div class="b"><b>Bronze</b>Raw ride-booking data as received</div><div class="s"><b>Silver</b>PySpark fixes missing values, duplicates and quality issues</div><div class="g"><b>Gold</b>Delta Lake tables for bookings, revenue, cancellations, vehicles</div></div></section>
+<section><h2>Data quality</h2><div class="prose"><p>Missing values, duplicates and other quality issues are handled in the Silver layer, so the Gold tables are ready to query.</p></div></section>
+<section><h2>Tools</h2><ul class="tags"><li>Azure Databricks</li><li>PySpark</li><li>Apache Spark</li><li>Delta Lake</li><li>SQL</li></ul></section>
+<div class="pn"><a class="more" href="../customer-360-data-platform/"><small>Previous case study</small>← Customer 360 Data Platform</a><a class="more" style="text-align:right" href="../uber-ride-booking-analysis/"><small>Next case study</small>Uber Ride Booking Data Analysis →</a></div>
+</div>
+</main>
+<footer><div class="wrap"><span>© Rohan Kumar Raj · Noida, India</span><span><a href="mailto:rohan0902raj@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/rohan-kumar-raj-4900a1418" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/rohanRaj-py" target="_blank" rel="noopener">GitHub</a></span></div></footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
