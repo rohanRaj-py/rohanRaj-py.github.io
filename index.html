@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects | Rohan Kumar Raj</title>
+<meta name="description" content="Data engineering and analysis case studies by Rohan Kumar Raj.">
+<meta name="theme-color" content="#14171c">
+<meta property="og:title" content="Projects | Rohan Kumar Raj">
+<meta property="og:description" content="Data engineering and analysis case studies by Rohan Kumar Raj.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><a class="logo" href="../">Rohan Kumar Raj</a>
+<nav aria-label="Main"><a href="../about/">About</a><a href="../journey/">Journey</a><a href="../projects/" aria-current="page">Projects</a><a href="../contact/">Contact</a></nav></div></header>
+<main id="main">
+<div class="wrap">
+<div class="pagehead"><p class="eyebrow">Projects · Case studies</p>
+<h1>Selected work</h1>
+<p>Real pipelines and analysis, from raw data to reporting. Open a case study for the problem, my part, and what the result is.</p></div>
+<section>
+<div class="projs"><article class="proj">
+<span class="num">01 · Data pipeline</span>
+<h3><a href="../projects/customer-360-data-platform/">Customer 360 Data Platform</a></h3>
+<p class="out">One view of each customer, built from SQL Server, Oracle, APIs and CSV/JSON files, feeding Power BI dashboards on customer behavior and engagement.</p>
+<div class="layers"><div class="b"><b>Bronze</b>Azure Data Factory loads raw data into ADLS Gen2 on daily triggers</div><div class="s"><b>Silver</b>PySpark deduplicates customers, categorizes transactions, segments customers</div><div class="g"><b>Gold</b>Fact and dimension tables with spend, transactions, visits, session duration</div></div><ul class="tags"><li>Azure Data Factory</li><li>ADLS Gen2</li><li>Azure Databricks</li><li>PySpark</li><li>SQL</li><li>Power BI</li></ul>
+<a class="more" href="../projects/customer-360-data-platform/">Read case study →</a>
+</article><article class="proj">
+<span class="num">02 · Data pipeline</span>
+<h3><a href="../projects/uber-ride-bookings-pipeline/">Uber Ride Bookings Data Engineering Pipeline</a></h3>
+<p class="out">A Medallion pipeline that prepares ride-booking data so bookings, revenue, cancellations and vehicle performance can be analyzed with SQL.</p>
+<div class="layers"><div class="b"><b>Bronze</b>Raw ride-booking data as received</div><div class="s"><b>Silver</b>PySpark fixes missing values, duplicates and quality issues</div><div class="g"><b>Gold</b>Delta Lake tables for bookings, revenue, cancellations, vehicles</div></div><ul class="tags"><li>Azure Databricks</li><li>PySpark</li><li>Apache Spark</li><li>Delta Lake</li><li>SQL</li></ul>
+<a class="more" href="../projects/uber-ride-bookings-pipeline/">Read case study →</a>
+</article><article class="proj p-ana">
+<span class="num">03 · Data analysis</span>
+<h3><a href="../projects/uber-ride-booking-analysis/">Uber Ride Booking Data Analysis</a></h3>
+<p class="out">SQL analysis of booking trends, customer behavior and ride performance, summarized as KPIs for successful bookings, cancellation rate and revenue.</p>
+<ul class="tags"><li>SQL</li><li>Excel</li><li>Power BI</li></ul>
+<a class="more" href="../projects/uber-ride-booking-analysis/">Read case study →</a>
+</article></div>
+</section>
+</div>
+</main>
+<footer><div class="wrap"><span>© Rohan Kumar Raj · Noida, India</span><span><a href="mailto:rohan0902raj@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/rohan-kumar-raj-4900a1418" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/rohanRaj-py" target="_blank" rel="noopener">GitHub</a></span></div></footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>
