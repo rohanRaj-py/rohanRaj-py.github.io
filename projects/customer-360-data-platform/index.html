@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Customer 360 Data Platform | Rohan Kumar Raj</title>
+<meta name="description" content="Case study: Customer 360 Data Platform. One view of each customer, built from SQL Server, Oracle, APIs and CSV/JSON files, feeding Power BI dashboards on customer behavior and engagement.">
+<meta name="theme-color" content="#14171c">
+<meta property="og:title" content="Customer 360 Data Platform | Rohan Kumar Raj">
+<meta property="og:description" content="Case study: Customer 360 Data Platform. One view of each customer, built from SQL Server, Oracle, APIs and CSV/JSON files, feeding Power BI dashboards on customer behavior and engagement.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><a class="logo" href="../../">Rohan Kumar Raj</a>
+<nav aria-label="Main"><a href="../../about/">About</a><a href="../../journey/">Journey</a><a href="../../projects/" aria-current="page">Projects</a><a href="../../contact/">Contact</a></nav></div></header>
+<main id="main">
+<div class="wrap cs">
+<div class="pagehead"><p class="eyebrow">Case study · Data pipeline</p>
+<h1>Customer 360 Data Platform</h1>
+<div class="prose"><p class="lead" style="margin-top:16px">Customer data lived in four different kinds of source systems. I built the platform that brings it together into <strong>one view of each customer</strong>.</p></div></div>
+<div class="stats s4"><div><b>4</b><span>source types: SQL Server, Oracle, APIs, CSV/JSON</span></div><div><b>3</b><span>Medallion layers: Bronze, Silver, Gold</span></div><div><b>Daily</b><span>automated loads with ADF triggers</span></div><div><b>4</b><span>data quality checks</span></div></div>
+<section><div class="facts f3">
+<div class="fact"><h3>Problem</h3><p>Customer data was spread across SQL Server, Oracle, APIs and CSV/JSON files. Reporting on customer behavior and engagement needs one consistent, cleaned view of each customer.</p></div>
+<div class="fact"><h3>My role</h3><p>I built the end-to-end pipeline across all four kinds of source systems, automated its ingestion, added data quality checks, and connected the Gold layer to Power BI.</p></div>
+<div class="fact"><h3>Result</h3><p>One customer view, refreshed daily, with Gold tables connected to Power BI for customer behavior and engagement analysis.</p></div>
+</div></section>
+<section><h2>Approach</h2><div class="prose"><p>The pipeline follows the Medallion architecture:</p></div><div class="layers"><div class="b"><b>Bronze</b>Azure Data Factory loads raw data into ADLS Gen2 on daily triggers</div><div class="s"><b>Silver</b>PySpark deduplicates customers, categorizes transactions, segments customers</div><div class="g"><b>Gold</b>Fact and dimension tables with spend, transactions, visits, session duration</div></div></section>
+<section><h2>Data quality</h2><div class="prose"><p>Schema validation, null handling, duplicate removal and data type validation.</p></div></section>
+<section><h2>Tools</h2><ul class="tags"><li>Azure Data Factory</li><li>ADLS Gen2</li><li>Azure Databricks</li><li>PySpark</li><li>SQL</li><li>Power BI</li></ul></section>
+<div class="pn"><span></span><a class="more" style="text-align:right" href="../uber-ride-bookings-pipeline/"><small>Next case study</small>Uber Ride Bookings Data Engineering Pipeline →</a></div>
+</div>
+</main>
+<footer><div class="wrap"><span>© Rohan Kumar Raj · Noida, India</span><span><a href="mailto:rohan0902raj@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/rohan-kumar-raj-4900a1418" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/rohanRaj-py" target="_blank" rel="noopener">GitHub</a></span></div></footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
